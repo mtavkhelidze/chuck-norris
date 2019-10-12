@@ -5,6 +5,14 @@ From [*Let's Build Chuck Norris!*](https://dmerej.info/blog/post/introducing-the
 
 Use tags to checkout parts of the above tutorial.
 
+## Prerequisites
+
+Below is for *macOS*, but should be something similar for Linux or Windows.
+
+```shell script
+$ brew install cmake ninja
+```
+
 ## Build / Run
 
 ```shell script
