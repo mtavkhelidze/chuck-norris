@@ -1,4 +1,4 @@
-#include "chuck-norris.hpp"
+#include "chuck-fact.hpp"
 #include <iostream>
 
 int main()

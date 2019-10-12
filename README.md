@@ -1,16 +1,17 @@
 Chuck Norris Facts Library
 ---
 
-From [*Let's Build Chuck Norris!*](https://dmerej.info/blog/post/introducing-the-chuck-norris-project/)
+From [Let's Build Chuck Norris!](https://dmerej.info/blog/post/introducing-the-chuck-norris-project/)
 
 Use tags to checkout parts of the above tutorial.
 
 ## Prerequisites
 
-Below is for *macOS*, but should be something similar for Linux or Windows.
+Below is for macOS, but should be something similar for Linux or Windows.
 
 ```shell script
-$ brew install cmake ninja
+$ brew install cmake ninja python3
+$ python3 -m pip install conan
 ```
 
 ## Build / Run
