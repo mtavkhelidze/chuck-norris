@@ -1,22 +1,24 @@
 #include <sqlite3.h>
 #include <iostream>
+#include <chuck-fact.h>
+
 #include "chuck-fact.hpp"
 #include "facts.hpp"
 
 
-ChuckNorris::ChuckNorris()
+ChuckNorrisFact::ChuckNorrisFact()
 {
     sqlite3_open(":memory:", &_db);
     sqlite3_exec(_db, sql_init, nullptr, nullptr, nullptr);
 }
 
-ChuckNorris::~ChuckNorris()
+ChuckNorrisFact::~ChuckNorrisFact()
 {
     sqlite3_close_v2(_db);
     _db = nullptr;
 }
 
-std::string ChuckNorris::get_fact()
+std::string ChuckNorrisFact::get()
 {
     sqlite3_stmt* stm;
 

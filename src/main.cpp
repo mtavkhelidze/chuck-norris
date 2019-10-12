@@ -3,8 +3,8 @@
 
 int main()
 {
-    ChuckNorris cn;
-    std::string fact = cn.get_fact();
+    ChuckNorrisFact cn;
+    std::string fact = cn.get();
     std::cout << fact << std::endl;
     return 0;
 }

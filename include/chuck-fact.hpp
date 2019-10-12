@@ -4,21 +4,21 @@
 #include <string>
 #include <sqlite3.h>
 
-class ChuckNorris {
+class ChuckNorrisFact {
 public:
-    ChuckNorris();
-    ~ChuckNorris();
+    ChuckNorrisFact();
+    ~ChuckNorrisFact();
 
     // no copy
-    ChuckNorris(ChuckNorris const&) = delete;
-    ChuckNorris operator=(ChuckNorris const&) = delete;
+    ChuckNorrisFact(ChuckNorrisFact const&) = delete;
+    ChuckNorrisFact operator=(ChuckNorrisFact const&) = delete;
 
     // no move
-    ChuckNorris(ChuckNorris &&) = delete;
-    ChuckNorris operator=(ChuckNorris &&) = delete;
+    ChuckNorrisFact(ChuckNorrisFact &&) = delete;
+    ChuckNorrisFact operator=(ChuckNorrisFact &&) = delete;
 
 
-    std::string get_fact();
+    std::string get();
 
 private:
     sqlite3 *_db = nullptr;
