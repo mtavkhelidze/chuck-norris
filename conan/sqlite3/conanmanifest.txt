@@ -1,0 +1,5 @@
+1556334563
+LICENSE.md: 867efafe2f99b907dad732b1e2bdb351
+conanfile.py: d4755e996f9ed96785edf9258424a4a3
+export_source/CMakeLists.txt: 338b3cd0eccb12c0a68f1292d378bc4e
+export_source/FindSQLite3.cmake: 9e89b6c8e8a688be1f3629345e64b654

@@ -8,7 +8,7 @@ mkdir $build_dir 2>/dev/null
 (
   cd $build_dir || exit
   if [[ ! -s "conanbuildinfo.cmake" ]]; then
-    conan install ../ --build
+    conan install ../ --build --option 'sqlite3:fPIC=True'
   fi
   cmake -GNinja ../
   ninja

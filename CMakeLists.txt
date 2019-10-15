@@ -13,14 +13,18 @@ set(CN_SOURCES
     )
 
 include_directories(include)
+set(BUILD_SHARED_LIBS ON)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
 add_library(chuck-norris ${CN_SOURCES})
+target_link_libraries(chuck-norris CONAN_PKG::sqlite3)
 
 add_executable(chuck-fact src/main.cpp)
-target_link_libraries(chuck-fact chuck-norris CONAN_PKG::sqlite3)
+target_link_libraries(chuck-fact chuck-norris)
+set_target_properties(chuck-fact PROPERTIES LINK_FLAGS "-Wl,-rpath,.build/lib")
 
-add_executable(chuck-fact_c src/main.c)
-target_link_libraries(chuck-fact_c chuck-norris CONAN_PKG::sqlite3)
+add_executable(chuck-fact-c src/main.c)
+target_link_libraries(chuck-fact-c chuck-norris)
+set_target_properties(chuck-fact-c PROPERTIES LINK_FLAGS "-Wl,-rpath,.build/lib")

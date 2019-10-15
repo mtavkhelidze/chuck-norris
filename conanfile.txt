@@ -1,5 +1,8 @@
 [requires]
-sqlite3/3.28.0@bincrafters/stable
+sqlite3/3.28.0@mtavkhelidze/develop
 
 [generators]
 cmake
+
+[options]
+sqlite3:fPIC = True

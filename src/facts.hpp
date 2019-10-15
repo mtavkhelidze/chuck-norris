@@ -219,7 +219,7 @@ insert into chucknorris (fact) values("Chuck Norris once kicked a horse in the c
 insert into chucknorris (fact) values("Chuck Norris once lost the remote, but maintained control of the TV by yelling at it in between bites of his 'Filet of Child' sandwich.");
 insert into chucknorris (fact) values("Chuck Norris once ordered a steak in a restaurant. The steak did what it was told.");
 insert into chucknorris (fact) values("Chuck Norris once participated in the running of the bulls. He walked.");
-insert into chucknorris (fact) values("Chuck Norris once played rugby by himself.  He went undefeated. Chuck Norris once played rugby by himself.  He went undefeated.");
+insert into chucknorris (fact) values("Chuck Norris once played rugby by himself.  He went undefeated.");
 insert into chucknorris (fact) values("Chuck Norris once pulled out a single hair from his beard and skewered three men through the heart with it.");
 insert into chucknorris (fact) values("Chuck Norris once rode a bull, and nine months later it had a calf.");
 insert into chucknorris (fact) values("Chuck Norris once rode a nine foot grizzly bear through an automatic car wash, instead of taking a shower.");
