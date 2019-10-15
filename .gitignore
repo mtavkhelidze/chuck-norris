@@ -91,3 +91,7 @@ build
 chuck-fact
 .idea
 .build
+
+python/build
+chuckfact.egg-info
+_chuck_fact.abi3.so

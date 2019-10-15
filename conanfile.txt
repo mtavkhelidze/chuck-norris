@@ -3,6 +3,7 @@ sqlite3/3.28.0@mtavkhelidze/develop
 
 [generators]
 cmake
+json
 
 [options]
 sqlite3:fPIC = True
